@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.securityjwtdemo.dao.ElstRoleMapper">
+  <resultMap id="BaseResultMap" type="com.securityjwtdemo.entity.ElstRole">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="role_id" jdbcType="VARCHAR" property="roleId" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="zh_name" jdbcType="VARCHAR" property="zhName" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, role_id, role_name, zh_name
+  </sql>
+
+  <select id="selectRoleByUser" resultType="com.securityjwtdemo.entity.ElstRole">
+      select
+        r.id, r.role_id, r.role_name, r.zh_name
+      from elst_role r
+      LEFT JOIN elst_user_role ur ON ur.role_id = r.role_id
+      WHERE ur.user_id = #{userId}
+  </select>
+
+    <select id="selectRoleByMenu" resultType="com.securityjwtdemo.entity.ElstRole">
+      select
+        r.id, r.role_id, r.role_name, r.zh_name
+      from elst_role r
+      LEFT JOIN elst_role_menu rm ON rm.role_id = r.role_id
+      WHERE rm.menu_id = #{menuId}
+  </select>
+</mapper>

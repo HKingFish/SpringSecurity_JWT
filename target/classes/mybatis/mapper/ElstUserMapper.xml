@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.securityjwtdemo.dao.ElstUserMapper">
+    <resultMap id="BaseResultMap" type="com.securityjwtdemo.entity.ElstUser">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="VARCHAR" property="userId"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="user_pwd" jdbcType="VARCHAR" property="userPwd"/>
+        <result column="user_enabled" jdbcType="SMALLINT" property="userEnabled"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    id, user_id, user_name, user_pwd, user_enabled
+  </sql>
+
+    <insert id="insert" parameterType="com.securityjwtdemo.entity.ElstUser">
+    insert into elst_user (id, user_id, user_name,
+      user_pwd, user_enabled)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR},
+      #{userPwd,jdbcType=VARCHAR}, #{userEnabled,jdbcType=SMALLINT})
+  </insert>
+    <insert id="insertSelective" parameterType="com.securityjwtdemo.entity.ElstUser">
+        insert into elst_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="userPwd != null">
+                user_pwd,
+            </if>
+            <if test="userEnabled != null">
+                user_enabled,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="userName != null">
+                #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="userPwd != null">
+                #{userPwd,jdbcType=VARCHAR},
+            </if>
+            <if test="userEnabled != null">
+                #{userEnabled,jdbcType=SMALLINT},
+            </if>
+        </trim>
+    </insert>
+
+    <resultMap id="loadUserByUsernameResultMap" type="com.securityjwtdemo.entity.security.JwtUserDetails">
+        <result column="user_id" property="userId"></result>
+        <collection property="roles" select="com.securityjwtdemo.dao.ElstRoleMapper.selectRoleByUser" column="user_id"
+                    ofType="com.securityjwtdemo.entity.ElstRole"/>
+    </resultMap>
+
+    <select id="loadUserByUsername" resultMap="loadUserByUsernameResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from elst_user
+        where user_id = #{userId}
+    </select>
+</mapper>

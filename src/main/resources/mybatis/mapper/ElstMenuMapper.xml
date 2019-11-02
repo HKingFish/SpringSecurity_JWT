@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.securityjwtdemo.dao.ElstMenuMapper">
+  <resultMap id="BaseResultMap" type="com.securityjwtdemo.entity.ElstMenu">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="menu_id" jdbcType="VARCHAR" property="menuId" />
+    <result column="menu_name" jdbcType="VARCHAR" property="menuName" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="menu_url" jdbcType="VARCHAR" property="menuUrl" />
+    <result column="menu_path" jdbcType="VARCHAR" property="menuPath" />
+    <result column="menu_enabled" jdbcType="SMALLINT" property="menuEnabled" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, menu_id, menu_name, parent_id, menu_url, menu_path, menu_enabled
+  </sql>
+
+  <resultMap id="Menu_Role_Info" type="com.securityjwtdemo.entity.info.ElstMenuInfo">
+    <collection property="roles" select="com.securityjwtdemo.dao.ElstRoleMapper.selectRoleByMenu" column="menu_id"
+                ofType="com.securityjwtdemo.entity.ElstRole" ></collection>
+  </resultMap>
+
+  <select id="getAllMenuInfo" resultMap="Menu_Role_Info">
+    select
+    <include refid="Base_Column_List"></include>
+    from elst_menu
+  </select>
+</mapper>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08c79e29-5c47-4475-a88d-2773ee2351d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/JwtAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/JwtAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/JwtFilterInvocationSecurityMetadataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/JwtFilterInvocationSecurityMetadataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/JwtUrlAccessDecisionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/JwtUrlAccessDecisionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/SpringWebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/SpringWebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/entity/info/ElstMenuInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/entity/info/ElstMenuInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/entity/security/JwtLoginToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/entity/security/JwtLoginToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/entity/security/JwtUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/entity/security/JwtUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/exception/LoginInvalidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/exception/LoginInvalidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/filter/security/JwtLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/filter/security/JwtLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/filter/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/filter/security/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtLoginFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtLoginFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtLoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtLoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/service/jwtsecurity/JwtUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/utils/SpringSecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/utils/SpringSecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target" beforeDir="true" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SuXYK573ELI9sRJWCHmDKXyaV0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\wlhao\securityjwt-old\src\main\java\com\securityjwtdemo\common" />
+      <recent name="E:\wlhao\securityjwt-old\src\main\java\com\securityjwtdemo" />
+      <recent name="E:\wlhao\securityjwt-old\src\main\resources" />
+      <recent name="E:\wlhao\securityjwt-old\src\main\resources\mapper" />
+      <recent name="E:\wlhao\securityjwt-old\src\main\java\com\securityjwtdemo\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.securityjwtdemo.filter.security" />
+      <recent name="com.securityjwtdemo.utils" />
+      <recent name="com.securityjwtdemo.common.config.security" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\wlhao\securityjwt-old\src\main\resources\mybatis" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.App">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtAuthenticationProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.securityjwtdemo.common.config.security.JwtAuthenticationProvider" />
+      <module name="securityjwt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.securityjwtdemo.common.config.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtTokenFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.securityjwtdemo.filter.security.JwtTokenFilter" />
+      <module name="securityjwt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.securityjwtdemo.service.jwtsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="securityjwt" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JwtAuthenticationProvider" />
+        <item itemvalue="Application.JwtTokenFilter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\qxb-810\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\wlhao\securityjwt-old" />
+          <option name="myCopyRoot" value="E:\wlhao\securityjwt-old" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\wlhao\securityjwt-old" />
+          <option name="myCopyRoot" value="E:\wlhao\securityjwt-old" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08c79e29-5c47-4475-a88d-2773ee2351d5" name="Default Changelist" comment="" />
+      <created>1572414500913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572414500913</updated>
+      <workItem from="1572414502131" duration="13005000" />
+      <workItem from="1572482500585" duration="9237000" />
+      <workItem from="1572491830479" duration="20579000" />
+      <workItem from="1572568194966" duration="3875000" />
+      <workItem from="1572660185563" duration="3345000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.m2/repository/org/springframework/security/spring-security-config/4.2.4.RELEASE/spring-security-config-4.2.4.RELEASE-sources.jar!/org/springframework/security/config/http/HttpSecurityBeanDefinitionParser.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.m2/repository/org/springframework/security/spring-security-config/4.2.4.RELEASE/spring-security-config-4.2.4.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/FilterComparator.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.m2/repository/org/springframework/security/spring-security-config/4.2.4.RELEASE/spring-security-config-4.2.4.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java</url>
+          <line>984</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/securityjwtdemo/common/config/security/JwtUrlAccessDecisionManager.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
